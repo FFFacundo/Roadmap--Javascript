@@ -9,6 +9,11 @@ Javascript is a lightweight interpreted or "just-in-time compiled" programming l
 
 JS's dynamic capabilities include runtime obejct construction, variable parameter lists, functions variables, dynamic scripts creation (eval), object introspection(via for...in and Obejct utilities), and source-code recovery (retrieved through toString() ).
 
+# Run Javascript
+
+It can be run in the browser by including the script tag at the end of the body tag in your HTML, running it in the browser console or using Node.js REPL. 
+
+
 # TODO
 Investigate more about JS dynamic capabilities  
 
