@@ -51,3 +51,36 @@ console.log('\nMap: ')
 const electronicsCopy = electronics.map((element)=>{ return `${element}`+" (Copy)" });
 
 console.log(electronicsCopy);
+
+
+/**
+Crea un array de objetos (productos) y usa filter, find, some, every y     
+reduce para diferentes operaciones. 
+ */
+
+const products = ['Garlic','Albim','Milk','Bezoar','Clay','Zutula','Rum']
+
+// .filter  => Return an array with the elements that match
+// the condition of the callback function
+const filteredProducts = products.filter((product)=>{
+    return product.endsWith('m');
+});
+console.log("Products ending with 'm'", filteredProducts);
+// .find    => return the value of the first element where predicate
+// is true, and undefined otherwise.
+const foundProduct = products.find((product)=>{return product.includes('il')});
+console.log('Got milk? ', foundProduct);
+// .some    => Determines whether the specified callback function returns
+// true for any element of an array.
+const someProducts = products.some((product)=>{return product.length === 5});
+console.log('Some products are 5 letters long? ', someProducts);
+// .every   => Determines whether all the members of an array satisfy
+// the specified test.
+const everyProduct = products.every((product)=>{return product.endsWith('m')});
+console.log("Every products ends with 'm' ? ", everyProduct);
+// .reduce  => Calls the specified callback function for all the elements
+// in an array. The return value of the callback function is the
+// accumulated result, and is provided as an argument in the next
+// call to the callback function.
+const reducedProducts = products.reduce((accum, current)=>{ return accum+", "+current});
+console.log(reducedProducts);

@@ -36,3 +36,23 @@ console.log(typeof(nullVar));
 console.log(typeof(undefinedVar));
 console.log(typeof(bigIntVar));
 console.log(typeof(symbolVar));
+
+
+
+
+/**
+ * Coerción numérica: Realiza operaciones aritméticas básicas entre un number 
+y un string ("5" + 2, "5" - 2) y explica los resultados. 
+ */
+
+let aStringNumber = "500";
+let anIntNumber = 55;
+console.log('\n\n');
+console.log(aStringNumber - anIntNumber);// result=>445
+console.log(anIntNumber + aStringNumber);// result=> 55500
+console.log('\n');
+console.log(anIntNumber - aStringNumber);// result=> -445
+console.log(aStringNumber + anIntNumber);// result=> 50055
+
+// El operador "" + "" actua como concatenacion
+// El operador "" - "" actua como una resta. 
