@@ -18,7 +18,39 @@ This means, no matter where your variables or functions are declared, they are m
 Interesting Article: [Understanding Hoisting in Javascript](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript) 
 
 # Naming Rules
-The name of your variables should accurately identify it, because your code becomes easier to read, understand and to work with.
+- Javascript variables should be self-descriptive, the name of your variables should accurately identify it, because your code becomes easier to read, understand and to work with. It should not be necessary to add comments for additional documentation.
+- JS variables are case sensitive, therefore a variable "name" and "Name" are different.
+- There are multiple case styles to choose from while naming a variable: camelCase (JS), PascalCase (JS), snake_case,  kebab-case.
+You will usually find variables declared with *camelCase* name. This is a way of naming your variables, for instance: *myName*, *yourName*, *firstNameAndSecondName* and so on. You start your variable name with lowercase character and every "new" word that you want to include should be added with their first letter in uppercase.
+There are exceptions for naming JS constants, privates and classes/components but in general, **strings**, **booleans**, **numbers**, **objects**, **arrays** or **functions** are declared with camelCase.
+
+#### Naming Conventions: Boolean
+Prefixes like: **is**, **are** or **has** help developers distinguish a boolean from another variable just by looking at it: *isPresent*, *areEqual*, *hasDiscount*.
+#### Naming Conventions: Function & Methods
+Functions are also written in camelCase, while telling what the function is doing by giving it a verb as a prefix in the name, like:
+
+*function **getPrice** (productId) {...}*  
+The verb you use can be anything really (e.g. apply, calculate, set, post, remove, insert, etc)
+
+#### Naming Conventions: Class
+
+In contrast to other JS data structures, classes in Javascript are declared with **PascalCase**, which is similar to camelCase with the difference being that The first letter is Uppercase instead of lowercase. Note that when a class constructor is called for a new instance, it should also be PascalCase, since that's how it was declared in the first place.
+
+#### Naming Conventions: Private
+
+There are times when you will find an underscore _  in front of a variable/function/method. This means they are meant to be *private*. This can't be really enforced by Javascript, but it at least tells us how it should or shouldn't be used.
+
+(e.g. _getName (firstName, secondName) {...} )
+
+#### Naming Conventions: Constant
+
+As we know, constant are "variables" that are immutable. Declaring a variable with *const* will prevent it from being re-assigned, but if it is an array or object, it is important to consider that their internal properties ***can*** still be re-assigned.
+If you want to signal that something should be immutable, you should name constants with all caps, and in snake_case if it has more than 1 word.
+
+### Naming Conventions: Files
+
+Most commonly we can see PascalCase and kebab-case when naming JS files. Frontend applications you will often see components named in PascalCase, while in backend applications kebab-case is the most used.
+Depending on the system, which one you choose to name your files might cause some bugs, therefore the recommended case style is kebab-case.
 
 # Scopes
 a
