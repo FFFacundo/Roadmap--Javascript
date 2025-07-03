@@ -17,6 +17,10 @@ This means, no matter where your variables or functions are declared, they are m
 
 Interesting Article: [Understanding Hoisting in Javascript](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript) 
 
+# const, let or var?
+
+
+
 # Naming Rules
 - Javascript variables should be self-descriptive, the name of your variables should accurately identify it, because your code becomes easier to read, understand and to work with. It should not be necessary to add comments for additional documentation.
 - JS variables are case sensitive, therefore a variable "name" and "Name" are different.
