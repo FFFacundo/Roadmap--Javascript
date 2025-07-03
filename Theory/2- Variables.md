@@ -1,6 +1,5 @@
 # Declaration
-To use variables first we have to declare them, meaning "creating" them. In order to do that we use one of the following keywords: <const>, <let> or <var>.
-
+To use variables first we have to declare them, meaning "creating" them. In order to do that we use one of the following keywords: const, let and also var.
 
 # Hoisting
 According to [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting):
@@ -17,7 +16,7 @@ This means, no matter where your variables or functions are declared, they are m
 
 Interesting Article: [Understanding Hoisting in Javascript](https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript) 
 
-# const, let or var?
+
 
 
 
@@ -57,4 +56,17 @@ Most commonly we can see PascalCase and kebab-case when naming JS files. Fronten
 Depending on the system, which one you choose to name your files might cause some bugs, therefore the recommended case style is kebab-case.
 
 # Scopes
-a
+In Javascript, the scope is the visibility and how can variables be used after they are declared. This scope depends on the keyword used to declare it and also where it was declared in the program.
+
+### Local
+Variables declared inside the functions are considered to be of the local scope of the function. The local scope is further divided into function and block scope.
+
+### Function Scope
+Variables declared inside a function are only accessible within that function and cannot be used outside of it. Each new functions creates a new scope and variables created with var, let and const are quite similar when declared ***inside a function***.
+
+### Block Scope
+Variables declared inside an if or switch conditions, for or while loops are also accessible within that particular conditions or loop. Variables between the curly braces are considered within block scope. This scope is only provided by ***let*** and ***const***. Declaring a variable with ***var*** inside a block won't have block scope.
+
+### Global
+Any variable declared outside functions or blocks ( curly braces {} ) have global scope, they can be accessed from anywhere in the program.
+[Note] Assigning a value to an undeclared variable i.e ***blue = false*** it automatically becomes a global variable.
