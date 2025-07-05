@@ -84,3 +84,33 @@ console.log("Every products ends with 'm' ? ", everyProduct);
 // call to the callback function.
 const reducedProducts = products.reduce((accum, current)=>{ return accum+", "+current});
 console.log(reducedProducts);
+
+/**
+Arrays multidimensionales: Crea un array que represente una matriz 3x3 y 
+accede a un elemento específico (ej. el elemento en la fila 1, columna 2).
+ */
+
+const multiDimArr = [[1,2,3],
+                  [4,5,6],
+                  [7,8,9]];
+console.log("Element at row 1, column 2: ", multiDimArr[1][2]);
+
+
+
+/**
+Objetos literales: Crea un objeto coche con propiedades marca, modelo, año 
+y un método obtenerDescripcion() que devuelva una cadena con sus datos.
+ */
+
+const Car = {
+    brand: 'Chevrolet',
+    model: 'Camaro',
+    year: 2024,
+
+    getDescription:  () => {
+        return `This car is a ${Car.brand} ${Car.model} from ${Car.year}.`;
+    }
+}
+
+console.log(Car.getDescription());
+
