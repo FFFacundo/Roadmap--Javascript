@@ -143,10 +143,35 @@ let functionq_CorrectAnswer10 = possibleAnswers10[1][0];
 ////////////////////////////////////////////////////////////////////////////////
 
 
-// 6- Objects Quizz
+// 6- Objects Quizz                     7/10 right 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
-
+let objectsQuestion4 = "Which method is used to merge two objects?\n\n";
+let objectsPossibleAnswers4 = [
+    ["a","Object.assign()"],
+    ["b","Object.merge()"],
+    ["c","Object.create()"]
+    ["d","Object.combine()"],
+];
+let objectsCorrectAnswer4 = objectsPossibleAnswers4[0][0];
+////////////////////////////////////////////////////////////////////////////////
+let objectsQuestion6 = "Which of the following creates a deep copy of an obejct?\n\n";
+let objectsPossibleAnswers6 = [
+    ["a","JSON.stringify() and JSON.parse()"],
+    ["b","Object.assign()"],
+    ["c","Object.create(obj)"],
+    ["d","obj.freeze"]
+];
+let objectsCorrectAnswer6 = objectsPossibleAnswers6[0][0];
+////////////////////////////////////////////////////////////////////////////////
+let objectsQuestion8 = "Which of the following is a valid getter in an object?\n\n";
+let objectsPossibleAnswers8 = [
+    ["a","get name() { return this._name; }"],
+    ["b","getter name() { return this._name; }"],
+    ["c","get: function() { return this.name; }"],
+    ["d","name.get { return this._name; }"]
+];
+let objectsCorrectAnswer8 = objectsPossibleAnswers8[0][0];
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
